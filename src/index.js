@@ -5,6 +5,8 @@ import "./styles.css";
 
 import App from "./components/App";
 
+import Firebase, { FirebaseContext } from "./components/Firebase";
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -15,4 +17,9 @@ import App from "./components/App";
 // }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(
+  <FirebaseContext.Provider value={new Firebase()}>
+    <App />
+  </FirebaseContext.Provider>,
+  rootElementFirebase
+);

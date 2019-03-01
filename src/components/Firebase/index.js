@@ -1,5 +1,6 @@
-import firebase from "firebase";
-
-const Firebase = () => <div>Firebase</div>;
+import FirebaseContext from "./context";
+import Firebase from "./firebase";
 
 export default Firebase;
+
+export { FirebaseContext };
