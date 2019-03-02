@@ -10,6 +10,15 @@ import "firebase/auth";
 //   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
 // };
 
+var config = {
+  apiKey: "AIzaSyBxyjiEaYfB1bcp0r90F0TYkUObJJGuGvU",
+  authDomain: "exalted-beanbag-649.firebaseapp.com",
+  databaseURL: "https://exalted-beanbag-649.firebaseio.com",
+  projectId: "exalted-beanbag-649",
+  storageBucket: "exalted-beanbag-649.appspot.com",
+  messagingSenderId: "632071944847"
+};
+
 class Firebase {
   constructor() {
     app.initializeApp(config);
